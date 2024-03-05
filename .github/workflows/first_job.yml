@@ -9,12 +9,12 @@ jobs:
     - name: Git Checkout 
       uses: actions/checkout@v4
 
-    - name: welcome message
-      run: echo "My first github message"
+    - name: List and read files 
+      run: | 
+        echo "My first github message"
+        ls -larth
+        cat README.md 
     
-    - name: List the files
-      run: ls
-    
-    - name: Read Files
-      run: cat README.md 
-    
+    - name: Generate ascci character
+      run: cowsay -f dragon "Run for cover, I am dragon..." >> dgragon.txt 
+         
