@@ -15,7 +15,7 @@ jobs:
       - name: Sleep for 30second
         run: sleep 30
   
-    test_job_1:
+  test_job_1:
     runs-on: ubuntu-latest
     steps:
       - name: Sleep for 10sec
