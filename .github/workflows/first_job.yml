@@ -15,6 +15,4 @@ jobs:
         ls -larth
         cat README.md 
     
-    - name: Generate ascci character
-      run: cowsay -f dragon "Run for cover, I am dragon..." >> dgragon.txt 
          
