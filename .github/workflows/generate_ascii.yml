@@ -11,7 +11,10 @@ jobs:
 
     - name: List the files
       run: ls -larth 
-      
+
     - name: Execute shell script
-      run: ./ascii-shell.sh
+      run: | 
+        chmod +x ascii-shell.sh
+        ./ascii-shell.sh
+      
     
