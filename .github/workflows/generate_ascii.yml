@@ -1,0 +1,26 @@
+name: Generat ascii Artwork
+
+on: push
+
+jobs:
+  first_job:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Git Checkout 
+      uses: actions/checkout@v4
+
+    - name: Install Cowsay Program 
+      run: sudo apt-get install cowsay -y 
+
+    - name: Generate ascci character
+      run: cowsay -f dragon "Run for cover, I am dragon..." >> dgragon.txt 
+    
+    - name: Test file exists
+      run: grep -i "dragon" dragon.txt
+    
+    - name: Read file
+      run: cat dragon.txt
+    
+    - name: checkout repo files 
+      run: ls -larth 
+         
